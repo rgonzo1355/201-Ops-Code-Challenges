@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script Name:                  Hello World 
+# Script Name:                  Arrays 
 # Author:                       Rodolfo Gonzalez
 # Date of latest revision:      10/26/2023
 # Purpose:                      Ops Challenge 4 Arrays 
