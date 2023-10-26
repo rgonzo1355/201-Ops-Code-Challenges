@@ -13,11 +13,11 @@ directories=("dir1" "dir2" "dir3" "dir4")
 # Function to create directories and .txt files
 create_directories_and_files() {
     # Loop through the array and create a new .txt file in each directory
-    for dir in "${directories[@]}"; do
+    for dir in "${directories[@]}"; do # do indicates the beginning of the loop body
         mkdir "$dir" # Create a directory
         touch "$dir/$dir.txt" # Create a new .txt file in the directory
         echo "Created $dir/$dir.txt" # Print a message to confirm file creation 
-    done # Close the create_directories_and_files function, this keep giving me problems I had forgot to put it here.
+    done # Close the create_directories_and_files function, indicates end.
 }
 
 # Main
