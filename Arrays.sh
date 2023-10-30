@@ -17,12 +17,19 @@ grocery_list=(apple bananas orange onion)
 
 # THS IS  A FUNDAMENTAL IDEA OF COMPUTING
 # Print out the first item on the list
-echo ${grocery_list[1]}  # Access the first item
-echo ${grocery_list[0]}  # Access the second item
+echo ${grocery_list[0]}  # Access the first item
+echo ${grocery_list[1]}  # Access the second item
+
+# Use the pound sign in front of the array name give me the count of items in my list
+echo ${#grocery_list[*]}
 
 # Append a new item to the list
-new_snack="monster"
-grocery_list+=($new_snack)
+new_snack="monster" #The "" are optional
+# grocery_list+=($new_snack) # () Puts it in its own bucket and in the list.
+#grocery_list[1]="monster"
+grocery_list=("apple" "$new_snack" "bananas" "orange" "onion")  # Make "monster" the 2nd item and shift the others
+# add monster as the second item in the list: grocery_list[1]
+# add monster as the second item and shift everything: grocery_list[1]="monster"
 
 # Print the updated list
 echo ${grocery_list[-1]}
