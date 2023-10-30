@@ -34,4 +34,4 @@ grocery_list=("apple" "$new_snack" "bananas" "orange" "onion")  # Make "monster"
 # Print the updated list
 echo ${grocery_list[-1]}
 
-# End
+# End 
